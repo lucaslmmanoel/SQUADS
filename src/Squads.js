@@ -1,22 +1,20 @@
 import React from "react";
+import Container from "@material-ui/core/Container";
 import ButtonAppBar from "./components/navbar";
-import { Paper, Typography } from "@material-ui/core";
-class Squad extends React.Component {
+import Squad from "./Squad";
+
+class Squads extends React.Component {
+  
   render() {
     return (
       <>
         <ButtonAppBar />
-        <Paper>
-          <Typography variant="h5" component="h3">
-            This is a sheet of paper.
-          </Typography>
-          <Typography component="p">
-            Paper can be used to build surface or other elements for your
-            application.
-          </Typography>
-        </Paper>
+        <Container maxWidth="md">
+          <Squad />
+          <Squad />
+        </Container>
       </>
     );
   }
 }
-export default Squad;
+export default Squads;
