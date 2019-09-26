@@ -1,8 +1,8 @@
 import React from "react";
 import Container from "@material-ui/core/Container";
-import ButtonAppBar from "./components/navbar";
-import Squad from "./Squad";
+import ButtonAppBar from "../components/navbar";
 import { Box } from "@material-ui/core";
+import Squad from "../components/Squad";
 
 class Squads extends React.Component {
   render() {

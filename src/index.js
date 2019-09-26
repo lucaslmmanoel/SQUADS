@@ -4,15 +4,15 @@ import { Route, BrowserRouter as Router } from 'react-router-dom'
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-import Squad from './Squad';
-import Squads from './Squads';
+import Squads from './pages/Squads';
+import Metrics from './pages/metrics';
 
 const routing = (
     <Router>
     <div>
       <Route exact path="/" component={App} />
-      <Route path="/squad" component={Squad} />
       <Route path="/squads" component={Squads} />
+      <Route path="/metrics" component={Metrics} />
     </div>
   </Router>
   )

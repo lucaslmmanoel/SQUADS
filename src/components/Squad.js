@@ -1,7 +1,7 @@
 import React from "react";
 import { Paper, Typography, Grid } from "@material-ui/core";
 import Box from "@material-ui/core/Box";
-import SquadAvatar from "./components/avatar";
+import SquadAvatar from "./avatar";
 
 class Squad extends React.Component {
   render() {
