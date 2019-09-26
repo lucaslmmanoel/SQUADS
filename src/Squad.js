@@ -1,6 +1,7 @@
 import React from "react";
-import { Paper, Typography, Avatar, Grid } from "@material-ui/core";
+import { Paper, Typography, Grid } from "@material-ui/core";
 import Box from "@material-ui/core/Box";
+import SquadAvatar from "./components/avatar";
 
 class Squad extends React.Component {
   render() {
@@ -24,24 +25,7 @@ class Squad extends React.Component {
               justify="center"
               alignItems="center"
             >
-              <Box m={1}>
-                <Avatar>LM</Avatar>
-              </Box>
-              <Box m={1}>
-                <Avatar>ML</Avatar>
-              </Box>
-              <Box m={1}>
-                <Avatar>LR</Avatar>
-              </Box>
-              <Box m={1}>
-                <Avatar>AM</Avatar>
-              </Box>
-              <Box m={1}>
-                <Avatar>PL</Avatar>
-              </Box>
-              <Box m={1}>
-                <Avatar>O</Avatar>
-              </Box>
+             <SquadAvatar/>
             </Grid>
           </Paper>
         </Box>

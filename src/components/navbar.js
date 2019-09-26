@@ -5,9 +5,7 @@ import Toolbar from "@material-ui/core/Toolbar";
 import Typography from "@material-ui/core/Typography";
 import Button from "@material-ui/core/Button";
 import logo from "../assets/logo.png";
-import { Box } from "@material-ui/core";
 import SideMenu from "./sidemenu";
-
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -28,13 +26,12 @@ export default function ButtonAppBar() {
     <div className={classes.root}>
       <AppBar position="static" color="default">
         <Toolbar>
-        <SideMenu></SideMenu>
-          
+          <SideMenu></SideMenu>
+
           <Typography variant="h6" className={classes.title}>
-            <Box m={3}>
-              <img src={logo} alt="" height="50"/>
-            </Box>
+              <img src={logo} alt="" height="50" />
           </Typography>
+
           <Button color="inherit">Logout</Button>
         </Toolbar>
       </AppBar>

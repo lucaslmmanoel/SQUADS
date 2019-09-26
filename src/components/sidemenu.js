@@ -64,7 +64,7 @@ export default function SideMenu() {
   );
 
   return (
-    <div>
+    <>
       <Button onClick={toggleDrawer("left", true)}>
         <IconButton
           edge="start"
@@ -78,6 +78,6 @@ export default function SideMenu() {
       <Drawer open={state.left} onClose={toggleDrawer("left", false)}>
         {sideList("left")}
       </Drawer>
-    </div>
+    </>
   );
 }
