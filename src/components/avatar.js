@@ -48,7 +48,7 @@ const data = [
   }
 ];
 
-export default function SquadAvatar() {
+export default function  SquadAvatar() {
   const useStyles = makeStyles(theme => ({
     modal: {
       display: "flex",

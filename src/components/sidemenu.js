@@ -8,6 +8,7 @@ import ListItem from "@material-ui/core/ListItem";
 import ListItemText from "@material-ui/core/ListItemText";
 import IconButton from "@material-ui/core/IconButton";
 import MenuIcon from "@material-ui/icons/Menu";
+import { Link } from "@material-ui/core";
 
 const useStyles = makeStyles({
   list: {
@@ -46,11 +47,16 @@ export default function SideMenu() {
       onKeyDown={toggleDrawer(side, false)}
     >
       <List>
-        {["Squads", "Metrics"].map((text, index) => (
-          <ListItem button key={text}>
-            <ListItemText primary={text} />
+        <Link href='/metrics'>
+          <ListItem button key="Metrics">
+            <ListItemText primary="Metrics" />
           </ListItem>
-        ))}
+        </Link>
+        <Link href='/squads'>
+          <ListItem button key="Squads">
+            <ListItemText primary="Squads" />
+          </ListItem>
+        </Link>
       </List>
       <Divider />
       <List>
