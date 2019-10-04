@@ -60,11 +60,11 @@ export default function SideMenu() {
       </List>
       <Divider />
       <List>
-        {["Profile", "Logout"].map((text, index) => (
-          <ListItem button key={text}>
-            <ListItemText primary={text} />
+        <Link href='/profile'>
+          <ListItem button key="Perfil">
+            <ListItemText primary="Perfil" />
           </ListItem>
-        ))}
+        </Link>
       </List>
     </div>
   );
