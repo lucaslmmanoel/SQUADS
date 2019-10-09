@@ -14,8 +14,6 @@ import Button from "@material-ui/core/Button";
 import SendIcon from "@material-ui/icons/Send";
 
 
-
-
 const useStyles = makeStyles(theme => ({
     root: {
         display: 'flex',
@@ -35,7 +33,7 @@ const useStyles = makeStyles(theme => ({
     mid: {
         marginTop: `15%`,
         marginLeft: `35%`,
-        transform: `translate(50px, 50px)`
+        transform: `translate(50px, 50px)`,
     }
 }));
 
@@ -49,7 +47,7 @@ export default function LoginForm() {
 
     const login = prop => event => {
         console.log({...values, [prop]: event.target.value});
-        document.location.href= '/profile';
+        document.location.href = '/profile';
     };
 
     const handleChange = prop => event => {

@@ -70,7 +70,7 @@ export default function ProfileTabs() {
                         <SoftSkills/>
                     </Grid>
                     <Grid item xs={6}>
-                        <HardSkills/>
+                        {/*<HardSkills/>*/}
                     </Grid>
                 </Grid>
             </TabPanel>
