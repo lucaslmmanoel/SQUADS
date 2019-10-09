@@ -6,7 +6,7 @@ import App from "./App";
 import * as serviceWorker from "./serviceWorker";
 import Squads from "./pages/Squads";
 import Metrics from "./pages/metrics";
-import Profile from "./pages/profile";
+import ProfilePage from "./pages/ProfilePage";
 import LoginPage from "./pages/LoginPage";
 
 const routing = (
@@ -16,7 +16,7 @@ const routing = (
       <Route path="/app" component={App} />
       <Route path="/squads" component={Squads} />
       <Route path="/metrics" component={Metrics} />
-      <Route path="/profile" component={Profile} />
+      <Route path="/profile" component={ProfilePage} />
     </div>
   </Router>
 );

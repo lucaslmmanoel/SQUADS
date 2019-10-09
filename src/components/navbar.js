@@ -24,6 +24,7 @@ const useStyles = makeStyles(theme => ({
     }
 }));
 
+
 export default function ButtonAppBar() {
     const classes = useStyles();
 
@@ -36,17 +37,17 @@ export default function ButtonAppBar() {
                         <img src={logo} alt="" height="50"/>
                     </Typography>
 
-                  <IconButton aria-label="show 17 new notifications" color="inherit">
-                    <Badge badgeContent={17} color="secondary">
-                      <NotificationsIcon/>
-                    </Badge>
-                  </IconButton>
+                    <IconButton aria-label="show 17 new notifications" color="inherit">
+                        <Badge badgeContent={17} color="secondary">
+                            <NotificationsIcon/>
+                        </Badge>
+                    </IconButton>
                     <Avatar
                         alt="User Image"
                         src="http://esb.poupex.com.br/rest/intranet-service/colaboradores/foto/07087646141"
                     />
 
-                    <Button>Logout</Button>
+                    <Button href='/'>Logout</Button>
                 </Toolbar>
             </AppBar>
         </div>

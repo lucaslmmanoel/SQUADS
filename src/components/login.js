@@ -11,7 +11,10 @@ import Grid from '@material-ui/core/Grid';
 import Paper from '@material-ui/core/Paper';
 import image from '../assets/img/team.png'
 import Button from "@material-ui/core/Button";
-import SendIcon from "@material-ui/core/SvgIcon/SvgIcon";
+import SendIcon from "@material-ui/icons/Send";
+
+
+
 
 const useStyles = makeStyles(theme => ({
     root: {
@@ -46,6 +49,7 @@ export default function LoginForm() {
 
     const login = prop => event => {
         console.log({...values, [prop]: event.target.value});
+        document.location.href= '/profile';
     };
 
     const handleChange = prop => event => {
@@ -62,7 +66,7 @@ export default function LoginForm() {
 
     return (
         <>
-            <Grid className={classes.mid} xs={3} sm={3}
+            <Grid className={classes.mid} item xs={3} sm={3}
                   container
                   spacing={0}
                   direction="column"
@@ -93,6 +97,7 @@ export default function LoginForm() {
                                             endAdornment: (
                                                 <InputAdornment position="end">
                                                     <IconButton>
+                                                        <SendIcon/>
                                                     </IconButton>
                                                 </InputAdornment>
                                             ),
