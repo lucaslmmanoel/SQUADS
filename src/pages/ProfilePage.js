@@ -10,7 +10,6 @@ class ProfilePage extends React.Component {
             <>
                 <ButtonAppBar/>
                 <ProfileTabs/>
-
             </>
         );
     }

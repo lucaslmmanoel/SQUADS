@@ -1,12 +1,13 @@
 import React from "react";
 import ReactStars from "react-stars";
-import {Box, Card, Grid, Paper, Table, TableBody, TableCell, TableHead, TableRow, Typography} from "@material-ui/core";
+import {
+    Box, Card, Grid,
+    Table, TableBody, TableCell,
+    TableHead, TableRow
+} from "@material-ui/core";
 import Button from "@material-ui/core/Button";
 import SendIcon from "@material-ui/icons/Send";
 import '../assets/profile.css';
-import List from '@material-ui/core/List';
-import ListItem from '@material-ui/core/ListItem';
-import ListItemText from '@material-ui/core/ListItemText';
 
 
 const SOFTSKILLS = [
@@ -21,10 +22,6 @@ const SOFTSKILLS = [
     "Capacidade de decisão"
 ];
 
-function createData(name, calories, fat, carbs, protein) {
-    return {name, calories, fat, carbs, protein};
-}
-
 
 class SoftSkills extends React.Component {
     render() {
@@ -36,12 +33,16 @@ class SoftSkills extends React.Component {
                 <Grid container>
                     <Grid item>
                         <Card className='soft-skills'>
-                            <h1>Habilidades <br/> Interpessoais</h1>
+                            <h2>Habilidades <br/> Interpessoais</h2>
                             <Table>
                                 <TableHead>
                                     <TableRow>
-                                        <TableCell>Habilidades</TableCell>
-                                        <TableCell align="right">Estrelas</TableCell>
+                                        <TableCell>
+                                            <h3>Habilidades</h3>
+                                        </TableCell>
+                                        <TableCell align="right">
+                                            <h3>Estrelas</h3>
+                                        </TableCell>
                                     </TableRow>
                                 </TableHead>
                                 <TableBody>
@@ -50,13 +51,13 @@ class SoftSkills extends React.Component {
 
                                             <TableRow key="teste">
                                                 <TableCell component="th" scope="row">
-                                                    {skill}
+                                                    <h3>{skill}</h3>
                                                 </TableCell>
                                                 <TableCell align="right">
                                                     <ReactStars
                                                         count={5}
                                                         onChange={ratingChanged}
-                                                        size={25}
+                                                        size={50}
                                                         color2={"#ffd700"}
                                                     /></TableCell>
                                             </TableRow>

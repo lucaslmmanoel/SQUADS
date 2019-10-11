@@ -2,4 +2,5 @@ Este é um projeto para ajudar na visualização de squads baseado no modelo de 
 
 ## S Q U A D S
 
-A forma de trabalhar em squads é uma das mais novas tecnologias, ter equipes voltadas para o negócio e pensando mais nos usuários finais das aplicações e dos serviços ofertadas é de extrema importância 
+A forma de trabalhar em squads é uma das mais novas tecnologias,
+ ter equipes voltadas para o negócio e pensando mais nos usuários finais das aplicações e dos serviços ofertadas é de extrema importância 

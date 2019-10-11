@@ -6,12 +6,12 @@ import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
 import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';
-import Grid from '@material-ui/core/Box';
 import SoftSkills from "../components/SoftSkills";
 import HardSkills from "./HardSkills";
 import SystemSkills from "./SystemSkills";
 
 function TabPanel(props) {
+
     const {children, value, index, ...other} = props;
 
     return (
@@ -60,23 +60,33 @@ export default function ProfileTabs() {
         <div className={classes.root}>
             <AppBar position="static">
                 <Tabs value={value} onChange={handleChange} aria-label="simple tabs example">
-                    <Tab label="Habilidades" {...a11yProps(0)} />
-                    <Tab label="Conhecimentos em Sistemas" {...a11yProps(1)} />
+                    <Tab label="Habilidades Interpessoais" {...a11yProps(0)} />
+                    <Tab label="Habilidades Profissionais" {...a11yProps(1)} />
+                    <Tab label="Conhecimentos em Sistemas" {...a11yProps(2)} />
                 </Tabs>
             </AppBar>
             <TabPanel value={value} index={0}>
-                <Grid container>
-                    <Grid item xs={6}>
+                <Box display="flex" justifyContent="center" m={1} p={1} bgcolor="background.paper">
+                    <Box p={1}>
                         <SoftSkills/>
-                    </Grid>
-                    <Grid item xs={6}>
-                        {/*<HardSkills/>*/}
-                    </Grid>
-                </Grid>
+                    </Box>
+                </Box>
             </TabPanel>
             <TabPanel value={value} index={1}>
-                <SystemSkills/>
+                <Box display="flex" justifyContent="center" m={1} p={1} bgcolor="background.paper">
+                    <Box p={1}>
+                        <HardSkills/>
+                    </Box>
+                </Box>
             </TabPanel>
+            <TabPanel value={value} index={2}>
+                <Box display="flex" justifyContent="center" m={1} p={1} bgcolor="background.paper">
+                    <Box p={1}>
+                        <SystemSkills/>
+                    </Box>
+                </Box>
+            </TabPanel>
+
         </div>
     );
 }

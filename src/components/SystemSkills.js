@@ -1,12 +1,12 @@
 import React from "react";
 import ReactStars from "react-stars";
-import {Box, Card, Grid, Paper, Table, TableBody, TableCell, TableHead, TableRow, Typography} from "@material-ui/core";
+import {Box, Card, Grid, Table, TableBody, TableCell, TableHead, TableRow} from "@material-ui/core";
 import Button from "@material-ui/core/Button";
 import SendIcon from "@material-ui/icons/Send";
 import '../assets/profile.css'
 
 const SYSTEMS = [
-    "Sistema A",
+    "Sistema de gerar dinheiro",
     "Sistema B",
     "Sistema C",
     "Sistema D",
@@ -14,8 +14,9 @@ const SYSTEMS = [
     "Sistema F",
     "Sistema G",
     "Sistema H",
-    "Sistema I",
-    "Sistema J",
+    "Sistema das estrelas",
+    "Sistema do multiverso",
+    "Sistema do qualquer",
 ];
 
 class SystemSkills extends React.Component {
@@ -28,27 +29,30 @@ class SystemSkills extends React.Component {
                 <Grid container>
                     <Grid item>
                         <Card className='soft-skills'>
-                            <h1>Conhecimentos em  <br/> Sistemas</h1>
+                            <h2>Conhecimentos <br/>em Sistemas</h2>
                             <Table>
                                 <TableHead>
                                     <TableRow>
-                                        <TableCell>Sistemas</TableCell>
-                                        <TableCell align="right">Estrelas</TableCell>
+                                        <TableCell>
+                                            <h3>Sistemas</h3>
+                                        </TableCell>
+                                        <TableCell align="right">
+                                            <h3>Estrelas</h3>
+                                        </TableCell>
                                     </TableRow>
                                 </TableHead>
                                 <TableBody>
                                     {SYSTEMS.map(skill => (
                                         <>
-
                                             <TableRow key="teste">
                                                 <TableCell component="th" scope="row">
-                                                    {skill}
+                                                    <h3>{skill}</h3>
                                                 </TableCell>
                                                 <TableCell align="right">
                                                     <ReactStars
                                                         count={5}
                                                         onChange={ratingChanged}
-                                                        size={25}
+                                                        size={50}
                                                         color2={"#ffd700"}
                                                     /></TableCell>
                                             </TableRow>
@@ -56,7 +60,6 @@ class SystemSkills extends React.Component {
                                     ))}
                                 </TableBody>
                             </Table>
-
                             <Box m={2}>
                                 <Button
                                     variant="contained"

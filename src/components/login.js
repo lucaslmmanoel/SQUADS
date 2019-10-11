@@ -1,3 +1,4 @@
+import Particles from 'react-particles-js';
 import React from 'react';
 import clsx from 'clsx';
 import {makeStyles} from '@material-ui/core/styles';
@@ -12,7 +13,7 @@ import Paper from '@material-ui/core/Paper';
 import image from '../assets/img/team.png'
 import Button from "@material-ui/core/Button";
 import SendIcon from "@material-ui/icons/Send";
-
+import '../assets/particle.css'
 
 const useStyles = makeStyles(theme => ({
     root: {
@@ -31,12 +32,23 @@ const useStyles = makeStyles(theme => ({
         color: theme.palette.text.secondary,
     },
     mid: {
-        marginTop: `15%`,
+        marginTop: `10%`,
         marginLeft: `35%`,
         transform: `translate(50px, 50px)`,
     }
 }));
 
+const particlesOptions = {
+    particles: {
+        number: {
+            value: 80,
+            density: {
+                enable: true,
+                value_area: 800
+            }
+        }
+    }
+};
 export default function LoginForm() {
     const classes = useStyles();
     const [values, setValues] = React.useState({
@@ -64,6 +76,7 @@ export default function LoginForm() {
 
     return (
         <>
+
             <Grid className={classes.mid} item xs={3} sm={3}
                   container
                   spacing={0}
@@ -71,6 +84,7 @@ export default function LoginForm() {
                   alignItems="center"
                   justify="center"
             >
+                <Particles className="particles" params={particlesOptions}/>
                 <Box m={3}>
                     <Paper>
                         <Card>
@@ -140,7 +154,6 @@ export default function LoginForm() {
                     </Paper>
                 </Box>
             </Grid>
-
         </>
     );
 }
