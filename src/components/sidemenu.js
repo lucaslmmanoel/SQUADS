@@ -28,6 +28,7 @@ export default function SideMenu() {
     right: false
   });
 
+
   const toggleDrawer = (side, open) => event => {
     if (
       event.type === "keydown" &&
@@ -75,7 +76,6 @@ export default function SideMenu() {
         <IconButton
           edge="start"
           className={classes.menuButton}
-          color=""
           aria-label="menu"
         >
           <MenuIcon />

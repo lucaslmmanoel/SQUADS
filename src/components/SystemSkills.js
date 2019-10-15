@@ -6,7 +6,7 @@ import SendIcon from "@material-ui/icons/Send";
 import '../assets/profile.css'
 
 const SYSTEMS = [
-    "Sistema de gerar dinheiro",
+    "Sistema XPTO",
     "Sistema B",
     "Sistema C",
     "Sistema D",
@@ -14,9 +14,6 @@ const SYSTEMS = [
     "Sistema F",
     "Sistema G",
     "Sistema H",
-    "Sistema das estrelas",
-    "Sistema do multiverso",
-    "Sistema do qualquer",
 ];
 
 class SystemSkills extends React.Component {
