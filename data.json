@@ -1,0 +1,64 @@
+{
+  "cpf": "07087646141",
+  "SQUAD": "IA",
+  "sistemas": {
+    "agpag": 2,
+    "PROTHEUS": 2,
+    "INIPEX": 2,
+    "PEXIA": 2
+  },
+  "soft-skills": {
+    "emapatia": 2,
+    "comunicação": 2
+  },
+  "hard-skills": [
+    {
+      "Analista de negocio": [
+        {
+          "A": 1
+        },
+        {
+          "B": 1
+        },
+        {
+          "C": 1
+        },
+        {
+          "D": 1
+        }
+      ]
+    },
+    {
+      "Desenvolvedor python": [
+        {
+          "A": 1
+        },
+        {
+          "B": 1
+        },
+        {
+          "C": 1
+        },
+        {
+          "D": 1
+        }
+      ]
+    },
+    {
+      "Desenvolvedor javascript": [
+        {
+          "A": 1
+        },
+        {
+          "B": 1
+        },
+        {
+          "C": 1
+        },
+        {
+          "D": 1
+        }
+      ]
+    }
+  ]
+}
